@@ -20,7 +20,7 @@ export const AboutSection = () => {
                     <button> Contact me</button>
                 </div>
                 <div className="image">
-                    <img src={home1} alt="" />
+                    <img src={home1} alt="camera-man" />
                 </div>
             </div>
         </section>
