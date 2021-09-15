@@ -20,7 +20,7 @@ export const FaqSection = () => {
                 <div className="faq-line"></div>
             </div>
             <div className="question">
-                <h4> Daily Shcedule?</h4>
+                <h4> Daily schedule?</h4>
                 <div className="answer">
                     <p>Lorem ipsum dolor sit amet.</p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, vitae.</p>
@@ -69,15 +69,13 @@ h2{
 .question{
     padding:3rem 0rem;
     cursor: pointer;
+    h4{
+       color: white;
+      }
 }
 
 .answer{
     padding:2rem 0rem;
-
-   h4{
-       
-    color: white;
-   }
     p{
         padding:1rem 0rem;
     }

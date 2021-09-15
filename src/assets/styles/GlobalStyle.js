@@ -59,5 +59,12 @@ span{
 
 a{
     font-size: 1.1rem;
+    color: white;
+    text-decoration: none;
 }
+
+ul{
+    list-style: none;
+}
+
 `
