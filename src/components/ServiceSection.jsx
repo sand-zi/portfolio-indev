@@ -59,9 +59,8 @@ export const ServiceSection = () => {
 
 
 
-const StyledService = styled(StyledSectionLayout)`
+const StyledService = styled(StyledSectionLayout)``
 
-`
 const StyledDescription = styled(StyledDescriptionLayout)`
 h2{
     padding-bottom: 5rem;
