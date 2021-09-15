@@ -1,11 +1,14 @@
+import { GlobalStyle } from "./assets/styles/GlobalStyle.js";
 import { AboutPage } from "./pages/AboutPage";
+
 
 
 
 function App() {
   return (
     <div className="App">
-      Hello my love
+
+      <GlobalStyle />
       <AboutPage />
     </div>
   );
