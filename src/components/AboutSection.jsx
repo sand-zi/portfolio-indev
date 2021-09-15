@@ -1,9 +1,10 @@
 import home1 from '../assets/images/home1.png'
 
-
 // Styled Component import
 
 import styled from 'styled-components'
+
+import { StyledSectionLayout, StyledDescriptionLayout, StyledImageContainerLayout } from '../assets/styles/AboutPageLayouts.js'
 
 export const AboutSection = () => {
 
@@ -25,7 +26,7 @@ export const AboutSection = () => {
                 </div>
 
             </StyledDescription>
-            <StyledImageContainer className="image">
+            <StyledImageContainer className="image-container">
                 <img src={home1} alt="camera-man" />
             </StyledImageContainer>
         </StyledAbout>
@@ -34,36 +35,19 @@ export const AboutSection = () => {
 }
 
 
-const StyledAbout = styled.section`
-min-height: 90vh;
-display: flex;
-align-items: center;
-justify-content: space-between;
-padding: 5rem 10rem;
+const StyledAbout = styled(StyledSectionLayout)`
 color: white;
 `
 
-const StyledDescription = styled.div`
-
-flex: 1;
-padding-right: 1rem;
-h2{
+const StyledDescription = styled(StyledDescriptionLayout)`
+/* h2{
     font-weight: lighter;
-}
+} */
 
 `
 
-const StyledImageContainer = styled.div`
-flex: 1;
-/* added for animation */
-overflow: hidden;
+const StyledImageContainer = styled(StyledImageContainerLayout)``
 
-img{
-    width:100%;
-    height: 80vh;
-    object-fit: cover;
-}
-`
 
 const StyledHide = styled.div`
     overflow: hidden;

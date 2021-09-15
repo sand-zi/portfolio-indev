@@ -1,7 +1,14 @@
+// Styled Component import
+
+import styled from 'styled-components'
+
+import { StyledSectionLayout } from '../assets/styles/AboutPageLayouts.js'
+
+
 export const FaqSection = () => {
 
     return (
-        <section className="faq-section" >
+        <StyledSectionLayout className="faq-section" >
             <h2>Any Questions <span>FAQ</span></h2>
 
             <div className="question">
@@ -32,7 +39,7 @@ export const FaqSection = () => {
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, vitae.</p>
                 </div>
             </div>
-        </section>
+        </StyledSectionLayout>
     )
 
 }
