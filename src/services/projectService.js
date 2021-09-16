@@ -16,16 +16,19 @@ const PROJECTS =
             url: '/work/the-athlete',
             awards: [
                 {
-                    title: 'Truly A masterpiece',
+                    id: 1,
+                    title: 'Truly A masterpiece.',
                     description:
                         '“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”',
                 },
                 {
+                    id: 2,
                     title: 'Fresh look on a brutal sport.',
                     description:
                         '“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”',
                 },
                 {
+                    id: 3,
                     title: 'It’s okay lmao.',
                     description:
                         '“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”',
@@ -39,17 +42,20 @@ const PROJECTS =
             url: '/work/good-times',
             secondaryImg: goodtimes2,
             awards: [
-                {
-                    title: 'Truly A masterpiece',
+                {   
+                    id: 4,
+                    title: 'Truly A masterpiece.',
                     description:
                         '“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”',
                 },
                 {
+                    id: 5,
                     title: 'Fresh look on a brutal sport.',
                     description:
                         '“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”',
                 },
                 {
+                    id: 6,
                     title: 'It’s okay lmao.',
                     description:
                         '“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”',
@@ -64,16 +70,19 @@ const PROJECTS =
             secondaryImg: theracer2,
             awards: [
                 {
-                    title: 'Truly A masterpiece',
+                    id: 7,
+                    title: 'Truly A masterpiece.',
                     description:
                         '“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”',
                 },
-                {
+                {   
+                    id: 8,
                     title: 'Fresh look on a brutal sport.',
                     description:
                         '“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”',
                 },
                 {
+                    id: 9,
                     title: 'It’s okay lmao.',
                     description:
                         '“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”',
