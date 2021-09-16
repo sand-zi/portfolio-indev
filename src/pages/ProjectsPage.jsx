@@ -1,43 +1,50 @@
-import styled from 'styled-components'
+import { useState, useEffect } from 'react'
+import { projectService } from "../services/projectService.js";
+
 import { Link } from 'react-router-dom'
+
+import styled from 'styled-components'
+
+
 // Images
-import athlete from '../assets/images/athlete-small.png'
-import goodtimes from '../assets/images/goodtimes-small.png'
-import theracer from '../assets/images/theracer-small.png'
+// import athlete from '../assets/images/athlete-small.png'
+// import goodtimes from '../assets/images/goodtimes-small.png'
+// import theracer from '../assets/images/theracer-small.png'
 
 
 
 
 export const ProjectsPage = () => {
+    const [projects, setProjects] = useState([])
+
+
+    useEffect(() => {
+        const loadProjects = () => {
+
+            const projs = projectService.query()
+            setProjects(projs)
+        }
+
+        loadProjects()
+
+    }, [])
+
+    if (!projects.length) return <div>Loading the projects</div>
     return (
         <StyledProjectPage className="projects-page">
-            <StyledProjectPreview className='project-preview'>
-                <h2>The Athlete</h2>
-                <div className="line"></div>
-                <Link to='/'>
-                    <img src={athlete} alt="athlete" />
-                </Link>
 
-            </StyledProjectPreview>
+            {projects.map(project => {
+                return (
+                    <StyledProjectPreview className='project-preview' key={project.id}>
+                        <h2>{project.title}</h2>
+                        <div className="line"></div>
+                        <Link to={`/projects/${project.id}`}>
+                            <img src={project.mainImg} alt={project.title} />
+                        </Link>
 
-            <StyledProjectPreview className='project-preview'>
-                <h2>The Good Times</h2>
-                <div className="line"></div>
-                <Link to='/'>
-                    <img src={goodtimes} alt="goodtimes" />
-                </Link>
-
-            </StyledProjectPreview>
-            <StyledProjectPreview className='project-preview'>
-                <h2>The Racer</h2>
-                <div className="line"></div>
-                <Link to='/'>
-                    <img src={theracer} alt="racer" />
-                </Link>
-
-            </StyledProjectPreview>
-
-
+                    </StyledProjectPreview>
+                )
+            })}
 
         </StyledProjectPage>
     )

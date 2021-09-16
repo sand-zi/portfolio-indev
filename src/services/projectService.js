@@ -1,10 +1,10 @@
 //Import Images
-import athlete from './img/athlete-small.png';
-import goodtimes from './img/goodtimes-small.png';
-import theracer from './img/theracer-small.png';
-import athlete2 from './img/athlete2.png';
-import goodtimes2 from './img/good-times2.jpg';
-import theracer2 from './img/the-racer2.jpg';
+import athlete from '../assets/images/athlete-small.png';
+import goodtimes from '../assets/images/goodtimes-small.png';
+import theracer from '../assets/images/theracer-small.png';
+import athlete2 from '../assets/images/athlete2.png';
+import goodtimes2 from '../assets/images/good-times2.jpg';
+import theracer2 from '../assets/images/the-racer2.jpg';
 
 const PROJECTS =
     [
@@ -97,7 +97,6 @@ function query() {
 
 
 function getById(projId) {
-
     const project = PROJECTS.find(proj => proj.id === projId)
     return project
 }
