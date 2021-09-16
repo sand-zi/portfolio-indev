@@ -8,7 +8,7 @@ export const AppHeader = () => {
     return (
         <StyledNav className="app-header">
             <h1>
-                <a className="logo" href="#"> Portfolio inDev</a>
+                <NavLink className="logo" exact to="/"> Portfolio inDev</NavLink>
 
             </h1>
             <ul>
