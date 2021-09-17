@@ -1,8 +1,6 @@
 import home1 from '../assets/images/home1.png'
-
-// Styled Component import
-
 import styled from 'styled-components'
+import { motion } from 'framer-motion'
 
 import { StyledSectionLayout, StyledDescriptionLayout, StyledImageContainerLayout } from '../assets/styles/AboutPageLayouts.js'
 
@@ -13,7 +11,8 @@ export const AboutSection = () => {
             <StyledDescription className="description">
                 <div className="title">
                     <StyledHide className="hide">
-                        <h2>I work hard to make</h2>
+                        <motion.h2 animate={{ opacity: 1, transition: { duration: 2} }} initial={{ opacity: 0 }}>
+                            I work hard to make</motion.h2>
                     </StyledHide>
                     <StyledHide className="hide">
                         <h2>my <span>dreams</span> come</h2>
