@@ -6,12 +6,17 @@ import { StyledSectionLayout, StyledDescriptionLayout, StyledImageContainerLayou
 
 export const AboutSection = () => {
 
+    const titleAnim = {
+        hidden: { opacity: 0 },
+        show: { opacity: 1, transition: { duration: 2 } }
+    }
+
     return (
         <StyledAbout className='about-section'>
             <StyledDescription className="description">
                 <div className="title">
                     <StyledHide className="hide">
-                        <motion.h2 animate={{ opacity: 1, transition: { duration: 2} }} initial={{ opacity: 0 }}>
+                        <motion.h2 variants={titleAnim} initial="hidden" animate="show">
                             I work hard to make</motion.h2>
                     </StyledHide>
                     <StyledHide className="hide">
